@@ -1,27 +1,6 @@
-/*
-
-Your app must:
-    Render a game board in the browser
-    Switch turns between X and O (or whichever markers you select)
-    Visually display which side won if a player gets three in a row or show a draw/"cat’s game" if neither wins
-    Include separate HTML / CSS / JavaScript files
-    Stick with KISS (Keep It Simple Stupid) and DRY (Don't Repeat Yourself) principles
-    Use Javascript for DOM manipulation
-    Deploy your game online, where the rest of the world can access it
-    Use semantic markup for HTML and CSS (adhere to best practices)
-
-Necessary Deliverables
-    A working game, built by you, hosted somewhere on the internet
-    A link to your hosted working game in the URL section of your Github repo
-    A git repository hosted on Github, with a link to your hosted game, and frequent commits dating back to the very beginning of the project
-    A readme.md file with explanations of the technologies used, the approach taken, installation instructions, unsolved problems, etc.
-*/
-
 //Plan
 
 /*
-
-Initialize the game board with an array of arrays, where each inner array represents a row of the board and contains three blank spaces (represented by underscores).
 
 Display the initial board to the players.
 
@@ -46,3 +25,7 @@ If neither player has won and the board is not full, switch to the other player'
 Once the loop has ended (because a player has won or the board is full), ask the players if they want to play again. If they do, start a new game with an empty board. If they do not, end the program.
 
 */
+
+//Initialising the board with nested arrays where each square on the board represents a spot on the 3x3 grid. 
+
+const board = [ ['_', '_', '_'],['_', '_', '_']['_', '_', '_'] ];
