@@ -1,8 +1,4 @@
-<!-- Create an HTML file that includes a basic layout for your game. You will need a title, a header, and a container element that will hold your game board and any other elements you need.
-
-Inside your container element, create a 3x3 grid of squares using either divs or table cells. Each square should have an ID that identifies its position on the board (e.g. "square-1-1" for the top-left square).
-
-Use CSS to style your game board. You will need to set the size and position of each square, as well as the colors and borders that will make up your X's and O's.
+<!-- Use CSS to style your game board. You will need to set the size and position of each square, as well as the colors and borders that will make up your X's and O's.
 
 Create a JavaScript file that will handle the game logic for your tic-tac-toe game. This file should include functions for setting up the game, displaying the board, handling player moves, checking for a winner, and ending the game.
 
@@ -16,7 +12,7 @@ Write a function that will end the game if there is a tie. This function should 
 
 Update your HTML and JavaScript files to include functionality for starting a new game once the current game has ended. You can do this by adding a "New Game" button or link that will reset the game board and start a new game.
 
-Test your game to make sure it works as expected. You may need to make adjustments to your code and styling to get everything working smoothly. -->
+Test your game to make sure it works as expected. You may need to make adjustments to your code and styling to get everything working smoothly.  -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -27,8 +23,29 @@ Test your game to make sure it works as expected. You may need to make adjustmen
     <link rel="stylesheet" href="css/tic-tac-toe.css">
 </head>
 <body>
+    <header>
+        <h1>Tic-Tac-Toe</h1>
+    </header>
+    <main>
     <p>Coming soon</p>
+    </main>
+    <div id="game-container">
 
+        <!-- The game board will be created here -->
+        <!-- Create a 3x3 grid of squares using either divs or table cells. Each square should have an ID that identifies its position on the board. -->
+       
+        <div id="game-board">
+            <div id="square-1-1" class="square"></div>
+            <div id="square 1-2" class="square"></div>
+            <div id="square 1-3" class="square" ></div>
+            <div id="square 2-1" class="square" ></div>
+            <div id="square 2-2" class="square" ></div>
+            <div id="square 2-3" class="square" ></div>
+            <div id="square 3-1" class="square" ></div>
+            <div id="square 3-2" class="square" ></div>
+            <div id="square 3-3" class="square" ></div>
+        </div>
+    </div>
 <script src="js/tic-tac-toe.js"></script>
 </body>
 </html>
