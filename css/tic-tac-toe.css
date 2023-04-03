@@ -8,22 +8,26 @@
 h1 {
     text-align: center;
     color: paleturquoise;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
 }
 
-/* Changing the color and font.  */
+/* Changing the color and font and adding a text-shadow.  */
 h2 {
     color: bisque;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-shadow: 5px 5px 5px chocolate;
 }
 
+/* Changing the background colour.  */
 body {
     background-color: burlywood;
 }
-/* Changing the font */
+
+/* Changing the font and adding a border and some padding */
 ul {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border: 5px solid aliceblue;
+    padding: 2em;
 }
 
 /* Styling the board-game ID */

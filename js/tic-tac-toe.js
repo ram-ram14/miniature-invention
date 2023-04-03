@@ -2,8 +2,6 @@
 
 /*
 
-Display the initial board to the players.
-
 Create a loop that will continue until either a player has won or the board is full.
 
 Inside the loop, determine which player's turn it is (either X or O).
