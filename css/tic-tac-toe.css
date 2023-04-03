@@ -1,0 +1,25 @@
+/* Setting the box-sizing property to all elements */
+
+* {
+    box-sizing: border-box;
+}
+
+/* Styling the board-game ID */
+#game-board {
+    width: 468px;
+    height: 468px;
+    margin: 0 auto;
+    border: 5px solid grey; 
+}
+
+/* Styling the individual squares */
+.square {
+    height: 150px;
+    width: 150px;
+    border: 2px solid blanchedalmond;
+    font-size: 50px;
+    text-align: center;
+    line-height: 100px;
+    cursor: pointer;
+    display: inline-block
+}
