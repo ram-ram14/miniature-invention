@@ -1,7 +1,5 @@
 <!-- 
 
-Create a JavaScript file that will handle the game logic for your tic-tac-toe game. This file should include functions for setting up the game, displaying the board, handling player moves, checking for a winner, and ending the game.
-
 Write a function that will set up the game when the page loads. This function should initialize the game board and display it on the screen.
 
 Write a function that will handle player moves. This function should be called whenever a player clicks on a square on the board. It should check if the square is already occupied, and if it is not, it should update the board with the player's move and switch to the other player's turn.
@@ -21,13 +19,21 @@ Test your game to make sure it works as expected. You may need to make adjustmen
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tic Tac Toe</title>
     <link rel="stylesheet" href="css/tic-tac-toe.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
 <body>
     <header>
-        <h1>Tic-Tac-Toe</h1>
+        <h1 class="animate__animated animate__bounce">Tic-Tac-Toe</h1>
     </header>
     <main>
-    <p>Coming soon</p>
+        <h2>Instructions</h2>
+        <ul>
+            <li>The game is played on a grid that is 3 squares by 3 squares.</li>
+            <li>You are X, the adversary is O.</li>
+            <li>Players take turns putting their marks in empty squares.</li>
+            <li>The first player to get 3 of their marks in a row (either up, across or diagonally) is the victor. </li>
+            <li>The game ceases when all squares are filled.</li>
+        </ul>
     </main>
     <div id="game-container">
 
