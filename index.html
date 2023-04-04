@@ -1,5 +1,4 @@
-<!-- Add event listeners to each square on the game board so that when a square is clicked, your code will know which square was clicked.
-Keep track of which player's turn it is and update the game board with their mark (e.g. "X" or "O") when a square is clicked.
+<!-- Keep track of which player's turn it is and update the game board with their mark (e.g. "X" or "O") when a square is clicked.
 Check for a winner after each turn. A player wins when they have three of their marks in a row (horizontally, vertically, or diagonally).
 If there is a winner, display a message to let the players know who won.
 If all the squares are filled and there is no winner, display a message to let the players know that the game ended in a tie. -->
@@ -18,14 +17,17 @@ If all the squares are filled and there is no winner, display a message to let t
         <h1 class="animate__animated animate__bounce">Tic-Tac-Toe</h1>
     </header>
     <main>
+
+        <!-- Adding a set of instructions of how the game will work -->
         <h2>Instructions</h2>
         <ul>
             <li>The game is played on a grid that is 3 squares by 3 squares.</li>
-            <li>You are 😼, the adversary is 🐶.</li>
+            <li>You are <span id="player 1">😼</span> and your adversary is <span id="player 2">🐶</span>.</li>
             <li>Players take turns putting their marks in empty squares.</li>
             <li>The first player to get 3 of their marks in a row (either up, across or diagonally) is the victor. </li>
             <li>The game ceases when all squares are filled.</li>
         </ul>
+
     </main>
     <div id="game-container">
 
@@ -50,6 +52,7 @@ If all the squares are filled and there is no winner, display a message to let t
             </div>
         </div>
     </div>
+<script src="js/jQuery.js"></script>
 <script src="js/tic-tac-toe.js"></script>
 </body>
 </html>
