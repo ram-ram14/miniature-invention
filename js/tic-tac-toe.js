@@ -40,9 +40,16 @@ const checkWin = function(player) {
         return true;
     }
 }
-console.log(checkWin(player));
 
 //Check win through rows and columns
+for (i = 0; i < 3; i++) {
+    if (board[i][0] === player && board[i][1] === player && board[i][2] === player || board[0][i] === player && board[1][i] === player && board[2][i] === player) {
+        return true;
+    }
+}
+
+// If none of the above conditions are true, then no win
+return false;
 
 //Adding a 'click' event listener to each element with the class 'square' which renders the following code.
 
