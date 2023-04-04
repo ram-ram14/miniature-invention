@@ -50,11 +50,9 @@ ul {
 /* Styling the button to restart the game */
 #restart {
     color: sandybrown;
-    margin: 4em;
-    object-position: center;
     padding: 1em;
     border-radius: 5px;
-    box-shadow: 5px 5px 5px beige;
-    margin-left: 30em;
+    box-shadow: 5px 5px 5px tomato;
+    margin: 0 auto;
     font-family: 'Times New Roman', Times, serif;
 }

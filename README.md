@@ -30,12 +30,15 @@ This is [a link to my Tic-Tac-Toe Game](https://ram-ram14.github.io/miniature-in
 
 ### Features
 
-One thing that makes my project stand out would be the use of different markers through the 😼 and 🐶 emojis as opposed to the conventional 'X' and 'O'. Additionally, the 3x3 grid is slightly different: I added a border around it because I thought it would look nicer as a cube. 
+One thing that makes my project stand out would be the use of different markers through the 😼 and 🐶 emojis as opposed to the conventional 'X' and 'O'. 
+
+Additionally, the 3x3 grid is slightly different: I added a border around it because I thought it would look nicer as a cube. 
 
 ### Difficulties encountered when building this
 
-* Initially, I mistakenly didn't realise that the 3x3 grid would have 9 squares. I only anticipated needing 6 and I had trouble understanding how to make the grid work. 
-* I had trouble positioning the restart-game button - currently positioned on the left, but it needs to be more centered. 
+Initially, I mistakenly didn't realise that the 3x3 grid would have 9 squares. I only anticipated needing 6 and I had trouble understanding how to make the grid work. 
+
+I had trouble positioning the restart-game button - currently positioned on the left, but it needs to be more centered. 
 
 ### How to use?
 
