@@ -52,4 +52,7 @@ ul {
     color: sandybrown;
     margin: 4em;
     object-position: center;
+    padding: 1em;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px beige;
 }
