@@ -1,16 +1,3 @@
-//Plan
-
-/*
-
-Create a function to update the game state based on player input.
-Write a function to check for a win condition, and update the game state accordingly.
-Create a function to switch players after each move.
-Add code to handle the end of the game, either by a win or a draw.
-Implement a reset button to start a new game.
-
-
-*/
-
 //Declaring a new variable for the current player
 
 let currentPlayer = 'player1';
@@ -25,7 +12,11 @@ const player2 = '🐶';
 
 //Declaring a new variable for the board
 
-const board = [ ['_', '_', '_'],['_', '_', '_'],['_', '_', '_'] ];
+const board = [ 
+    ['_', '_', '_'],
+    ['_', '_', '_'],
+    ['_', '_', '_'] 
+];
 
 //Creating an object by initialising each square to an underscore, meaning that it is initially empty. 
 
@@ -41,6 +32,18 @@ const squares = {
     'square3-3': '_',
 };
 
+//Function to check if the current player has won the round. 
+
+const checkWin = function(player) {
+    //Determining if a player has selected 3 diagonally
+    if (board[0][0] === player && board[1][1] === player && board[2][2] === player | board[0][2] === player && board[1][1] === player && board[2][2] === player) {
+        return true;
+    }
+}
+console.log(checkWin(player));
+
+//Check win through rows and columns
+
 //Adding a 'click' event listener to each element with the class 'square' which renders the following code.
 
 $('.square').click(function () {
@@ -54,18 +57,3 @@ $('.square').click(function () {
         currentPlayerSymbol = player2;
     }
 });
-
-//Add the game logic
-//If player 1 selects 3 squares in a row, player 1 wins
-//Check diagonally, up and across
-//If player 2 selects 3 squares in a row, player 2 wins
-//Check diagonally, up and across
-//Else the game ended in a draw
-//Update game display using jQuery
-
-// Determine a way to swap turns with the other player
-
-//Display the outcome of the game
-//Display 'Player 1/2 won' or 'The game ended in a tie'
-
-//Find a way to make the restart button reset the game
