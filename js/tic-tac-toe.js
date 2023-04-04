@@ -2,7 +2,6 @@
 
 /*
 
-Add event listeners to the game board squares to handle clicks by the players.
 Create a function to update the game state based on player input.
 Write a function to check for a win condition, and update the game state accordingly.
 Create a function to switch players after each move.
@@ -42,7 +41,7 @@ const squares = {
     'square3-3': '_',
 };
 
-//Adding a 'click' event listener to each element with the class 'square' and renders the following code.
+//Adding a 'click' event listener to each element with the class 'square' which renders the following code.
 
 $('.square').click(function () {
     const squareId = $(this).attr('id');
@@ -55,3 +54,18 @@ $('.square').click(function () {
         currentPlayerSymbol = player2;
     }
 });
+
+//Add the game logic
+//If player 1 selects 3 squares in a row, player 1 wins
+//Check diagonally, up and across
+//If player 2 selects 3 squares in a row, player 2 wins
+//Check diagonally, up and across
+//Else the game ended in a draw
+//Update game display using jQuery
+
+// Determine a way to swap turns with the other player
+
+//Display the outcome of the game
+//Display 'Player 1/2 won' or 'The game ended in a tie'
+
+//Find a way to make the restart button reset the game

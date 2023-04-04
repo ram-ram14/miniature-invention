@@ -1,8 +1,3 @@
-<!-- Keep track of which player's turn it is and update the game board with their mark (e.g. "X" or "O") when a square is clicked.
-Check for a winner after each turn. A player wins when they have three of their marks in a row (horizontally, vertically, or diagonally).
-If there is a winner, display a message to let the players know who won.
-If all the squares are filled and there is no winner, display a message to let the players know that the game ended in a tie. -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -37,13 +32,13 @@ If all the squares are filled and there is no winner, display a message to let t
         <div id="game-board">
             <div class="row">
                 <div id="square-1-1" class="square"></div>
-                <div id="square 1-2" class="square"></div>
-                <div id="square 1-3" class="square" ></div>
+                <div id="square-1-2" class="square"></div>
+                <div id="square-1-3" class="square" ></div>
             </div>
             <div class="row">
                 <div id="square-2-1" class="square"></div>
-                <div id="square 2-2" class="square"></div>
-                <div id="square 2-3" class="square" ></div>
+                <div id="square-2-2" class="square"></div>
+                <div id="square-2-3" class="square" ></div>
             </div>
             <div class="row">
                 <div id="square-3-1" class="square"></div>
@@ -55,4 +50,8 @@ If all the squares are filled and there is no winner, display a message to let t
 <script src="js/jQuery.js"></script>
 <script src="js/tic-tac-toe.js"></script>
 </body>
+<footer>
+    <!-- Creating a button to restart the game -->
+    <button id="restart">Restart Game</button>
+</footer>
 </html>

@@ -46,3 +46,10 @@ ul {
     line-height: 100px;
     display: inline-block
 }
+
+/* Styling the button to restart the game */
+#restart {
+    color: sandybrown;
+    margin: 4em;
+    object-position: center;
+}
