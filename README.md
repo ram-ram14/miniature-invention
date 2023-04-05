@@ -40,6 +40,8 @@ Initially, I mistakenly didn't realise that the 3x3 grid would have 9 squares. I
 
 I had trouble positioning the restart-game button - currently positioned on the left, but it needs to be more centered. 
 
+I had trouble updating the display of the board with the players' choices. 
+
 ### How to use?
 
 ### Credits & Acknowledgements 
