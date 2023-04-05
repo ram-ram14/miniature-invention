@@ -30,12 +30,6 @@ ul {
     padding: 2em;
 }
 
-/* Made an attempt to re-size the restart button using the parent property */
-/* #game-container {
-    max-width: 960px;
-    margin: 0 auto;
-} */
-
 /* Styling the board-game ID */
 #game-board {
     width: 468px;
@@ -49,17 +43,16 @@ ul {
     height: 150px;
     width: 150px;
     border: 5px solid blanchedalmond;
-    line-height: 150px;
     display: inline-block;
     font-size: 5em;
     text-align: center;
+    vertical-align: middle;
 }
 
 /* Styling the button to restart the game */
 #restart {
     display: block;
     color: sandybrown;
-    margin-top: 1em;
     border-radius: 5px;
     box-shadow: 5px 5px 5px tomato;
     margin: 0 auto;
