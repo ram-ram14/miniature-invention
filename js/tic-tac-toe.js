@@ -1,10 +1,10 @@
-    //Declaring a new variable for the current player
-
-    let currentPlayer = 'player1';
-
     //Declaring a new variable for player 1
 
     const player1 = '😼';
+
+    //Declaring a new variable for the current player
+
+    let currentPlayer = player1;
 
     //Declaring a new variable for player 2
 
@@ -50,24 +50,29 @@
         // If none of the above conditions are true, then no win
         return false;
     }
+    
+    //Check if the current player has won the game
+    function showWinner() {
+        if (checkWin(currentPlayer)) {
+            $('#winner-message').text(`Player ${currentPlayer} wins!`);
+        }
+    }
 
-    //Adding a 'click' event listener to each element with the class 'square' which renders the following code.
+    //Adding a 'click' event listener to each element with the class 'square'
 
     $('.square').click(function () {
         const squareId = $(this).attr('id');
         const [_, row, col] = squareId.split('-').map(Number);
 
-    //Update the squares object with the player's marker
-    squares[squareId] = currentPlayer;
+        //Update the squares object with the player's marker
+        squares[squareId] = currentPlayer;
 
-    //Update the text content of the clicked square element
-    $(this).text(currentPlayer);
+        //Update the text content of the clicked square element
+        $(this).text(currentPlayer);
 
-    //Check if the current player has won
-        if (checkWin(currentPlayer)) {
-            alert(currentPlayer + ' wins!');
-        }
-
+        //Update the board array with the player's marker
+        board[row - 1][col - 1] = currentPlayer;
+        showWinner();
         //Switching turns after each player makes their move
 
         if (currentPlayer === player1) {
@@ -76,6 +81,9 @@
             currentPlayer = player1;
         }
     })
+    
+    //If a player wins, then a message will appear.
+    showWinner();
 
     
 
