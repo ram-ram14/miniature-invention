@@ -42,6 +42,8 @@ I had trouble positioning the restart-game button - currently positioned on the 
 
 I had trouble updating the display of the board with the players' choices. 
 
+Bug found - when the player's play the game, it displays 'player 1' on one of the boxes. As soon as the player makes their move, it displays their marker, but box moves around. 
+
 ### How to use?
 
 ### Credits & Acknowledgements 

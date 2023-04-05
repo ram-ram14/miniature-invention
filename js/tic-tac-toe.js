@@ -1,4 +1,3 @@
-$(document).ready(function() {
     //Declaring a new variable for the current player
 
     let currentPlayer = 'player1';
@@ -36,16 +35,16 @@ $(document).ready(function() {
     //Function to check if the current player has won the round. 
 
     const checkWin = function(player) {
-        //Determining if a player has selected 3 diagonally
-        if ((board[0][0] === player && board[1][1] === player && board[2][2] === player) || (board[0][2] === player && board[1][1] === player && board[2][0] === player)) {
-            return true;
-        }
-
         //Check win through rows and columns
         for (let i = 0; i < 3; i++) {
             if (board[i][0] === player && board[i][1] === player && board[i][2] === player || board[0][i] === player && board[1][i] === player && board[2][i] === player) {
                 return true;
             }
+        }
+
+        //Determining if a player has selected 3 diagonally
+        if ((board[0][0] === player && board[1][1] === player && board[2][2] === player) || (board[0][2] === player && board[1][1] === player && board[2][0] === player)) {
+            return true;
         }
 
         // If none of the above conditions are true, then no win
@@ -56,26 +55,29 @@ $(document).ready(function() {
 
     $('.square').click(function () {
         const squareId = $(this).attr('id');
-        const row = parseInt((squareId[6]) -1);
-        const col = parseInt((squareId[8]) - 1);
+        const [_, row, col] = squareId.split('-').map(Number);
 
-        //Update the display of the board to reflect the player's selection with their own marker. 
+    //Update the squares object with the player's marker
+    squares[squareId] = currentPlayer;
 
-        //Update the board with the player's marker
+    //Update the text content of the clicked square element
+    $(this).text(currentPlayer);
 
-        //Check if the current player has won
-        
-    });
-
-    //Adding a function to switch turns after each player makes their move
-
-    const switchPlayer = function() {
-        if (currentPlayer === 'player1') {
-            currentPlayer = 'player2';
-        } else {
-            currentPlayer = 'player1';
+    //Check if the current player has won
+        if (checkWin(currentPlayer)) {
+            alert(currentPlayer + ' wins!');
         }
-    }
-    switchPlayer();
-})
+
+        //Switching turns after each player makes their move
+
+        if (currentPlayer === player1) {
+            currentPlayer = player2;
+        } else {
+            currentPlayer = player1;
+        }
+    })
+
+    
+
+    
 
