@@ -46,5 +46,9 @@ Bug found - when the player's play the game, it displays 'player 1' on one of th
 
 ### How to use?
 
+Player 1 is defaulted to 😼 and player 2 to 🐶. 
+Each player, by turn, selects a square from the grid. 
+The aim is to get 3 in a row either diagonally, horizontally or vertically. 
+
 ### Credits & Acknowledgements 
 A special thanks to CJ, Mark and Tina for helping me flesh this out and iron out any bugs that I came across whilst building this. 

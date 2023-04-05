@@ -54,7 +54,7 @@
     //Check if the current player has won the game
     function showWinner() {
         if (checkWin(currentPlayer)) {
-            $('#winner-message').text(`Player ${currentPlayer} wins!`);
+            $('#winner-message').text(`${currentPlayer} wins!`);
         }
     }
 
@@ -72,7 +72,10 @@
 
         //Update the board array with the player's marker
         board[row - 1][col - 1] = currentPlayer;
+        
+        //Invoking the showWinner function.
         showWinner();
+
         //Switching turns after each player makes their move
 
         if (currentPlayer === player1) {
@@ -84,6 +87,26 @@
     
     //If a player wins, then a message will appear.
     showWinner();
+
+    //Adding an event listener to the restart button to reset the game
+    $('#restart').click(function () {
+        //To reset the squares, the game needs to clear the markers from the board. 
+        $('.square').text('');
+
+        //Reverting the board and squares to their starting position
+        board.forEach(function(row, rowIndex) {
+            row.forEach(function(value, colIndex) {
+                board[rowIndex][colIndex] = '_';
+                squares['square' + (rowIndex+1) + '-' + (colIndex+1)] = '-';
+            })
+        })
+
+        //Reverting the currentPlayer to player1
+        currentPlayer = player1;
+
+        //Remove the winner message
+        $('#winner-message').text('');
+    });
 
     
 

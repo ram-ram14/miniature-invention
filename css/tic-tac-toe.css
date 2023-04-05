@@ -55,6 +55,19 @@ ul {
     color: sandybrown;
     border-radius: 5px;
     box-shadow: 5px 5px 5px tomato;
-    margin: 0 auto;
+    margin: 30px auto 0;
     font-family: 'Times New Roman', Times, serif;
+    padding: 1.5em 2em;
+}
+
+/* Adding a hover effect to the restart button */
+#restart:hover {
+    background-color: salmon;
+    cursor: pointer;
+}
+
+/* Styling the message that gets displayed when a player wins */
+#winner-message {
+    font-size: 30px;
+    color: whitesmoke;
 }
