@@ -72,6 +72,7 @@ ul {
     color: whitesmoke;
 }
 
+/* Adding a glow effect to the gameboard  */
 .glow {
     box-shadow: 0 0 10px blueviolet;
 }

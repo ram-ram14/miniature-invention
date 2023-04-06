@@ -32,6 +32,9 @@
         'square3-3': '_',
     };
 
+    //Adding a new variable to check if the game has ended
+    let gameEnd = false;
+
     //Function to check if the current player has won the round. 
 
     const checkWin = function(player) {
@@ -55,33 +58,37 @@
     function showWinner() {
         if (checkWin(currentPlayer)) {
             $('#winner-message').text(`${currentPlayer} wins!`);
+            gameEnd = true;
         }
     }
 
     //Adding a 'click' event listener to each element with the class 'square'
 
     $('.square').click(function () {
-        const squareId = $(this).attr('id');
-        const [_, row, col] = squareId.split('-').map(Number);
+        //A player can only select another square if the game has not ended yet.
+        if (!gameEnd) {
+            const squareId = $(this).attr('id');
+            const [_, row, col] = squareId.split('-').map(Number);
 
-        //Update the squares object with the player's marker
-        squares[squareId] = currentPlayer;
+            //Update the squares object with the player's marker
+            squares[squareId] = currentPlayer;
 
-        //Update the text content of the clicked square element
-        $(this).text(currentPlayer);
+            //Update the text content of the clicked square element
+            $(this).text(currentPlayer);
 
-        //Update the board array with the player's marker
-        board[row - 1][col - 1] = currentPlayer;
-        
-        //Invoking the showWinner function.
-        showWinner();
+            //Update the board array with the player's marker
+            board[row - 1][col - 1] = currentPlayer;
+            
+            //Invoking the showWinner function.
+            showWinner();
 
-        //Switching turns after each player makes their move
+            //Switching turns after each player makes their move
 
-        if (currentPlayer === player1) {
-            currentPlayer = player2;
-        } else {
-            currentPlayer = player1;
+            if (currentPlayer === player1) {
+                currentPlayer = player2;
+            } else {
+                currentPlayer = player1;
+            }
         }
     })
     
