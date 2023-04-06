@@ -26,8 +26,6 @@ Built with
 
 This is [a link to my Tic-Tac-Toe Game](https://ram-ram14.github.io/miniature-invention/).
 
-### Images
-
 ### Features
 
 One thing that makes my project stand out would be the use of different markers through the 😼 and 🐶 emojis as opposed to the conventional 'X' and 'O'. 
@@ -38,11 +36,11 @@ Additionally, the 3x3 grid is slightly different: I added a border around it bec
 
 Initially, I mistakenly didn't realise that the 3x3 grid would have 9 squares. I only anticipated needing 6 and I had trouble understanding how to make the grid work. 
 
-I had trouble positioning the restart-game button - currently positioned on the left, but it needs to be more centered. 
+I had trouble positioning the restart-game button - currently positioned on the left, but it needs to be more centered (resolved). 
 
 I had trouble updating the display of the board with the players' choices. 
 
-Bug found - when the player's play the game, it displays 'player 1' on one of the boxes. As soon as the player makes their move, it displays their marker, but box moves around. 
+Bug found - when the player's play the game, it displays 'player 1' on one of the boxes. As soon as the player makes their move, it displays their marker, but box moves around (resolved).
 
 ### How to use?
 

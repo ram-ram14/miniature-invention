@@ -108,6 +108,16 @@
         $('#winner-message').text('');
     });
 
+    //Adding an animated glow effect to the game-board when a player selects a square
+    $('.square').on('click', function() {
+        $('#game-board').addClass('glow');
+    });
+
+    //Once a player wins and the game resets, remove the animated glow effect. 
+    $('#restart').on('click', function() {
+        $('#game-board').removeClass('glow');
+    })
+
     
 
     
