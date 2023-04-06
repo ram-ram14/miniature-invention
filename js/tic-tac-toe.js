@@ -53,7 +53,7 @@
         // If none of the above conditions are true, then no win
         return false;
     }
-    
+
     //Check if the current player has won the game
     function showWinner() {
         if (checkWin(currentPlayer)) {
@@ -113,6 +113,12 @@
 
         //Remove the winner message
         $('#winner-message').text('');
+
+        //Reset the gameEnd variable
+        gameEnd = false;
+
+        //Invoke showWinner() to clear any previous messages
+        showWinner();
     });
 
     //Adding an animated glow effect to the game-board when a player selects a square
