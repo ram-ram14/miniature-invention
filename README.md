@@ -34,7 +34,11 @@ Additionally, the 3x3 grid is slightly different: I added a border around it bec
 
 ### Approach Taken
 
-I initially started by writing a plan of how I would create this game. I realised that the game-board is split into 9 squares, which game me an idea about how the logic would work. I proceeded to declare the variables, added the business logic and then add event listeners to the 'square class'. Eventually, I noticed that I didn't have a way to reset the game, so I had to go back and add a 'restart-button' to my HTML and a corresponding event listener. I added CSS periodically, but I now know that it would be best to focus on the core functionality first and add asthetics at the very end. 
+I initially started by writing a plan of how I would create this game. I realised that the game-board is split into 9 squares, which game me an idea about how the logic would work. 
+
+I proceeded to declare variables, added the business logic and then the event listeners to the 'square class'. Eventually, I noticed that I didn't have a way to reset the game, so I had to go back and add a 'restart-button' to my HTML and a corresponding event listener. 
+
+I added CSS periodically, but I now know that it would be best to focus on the core functionality first and add asthetics at the very end. 
 
 ### Difficulties encountered when building this
 
