@@ -56,11 +56,29 @@
 
     //Check if the current player has won the game
     function showWinner() {
+        let winner = null;
+
+        // Check for win conditions
         if (checkWin(currentPlayer)) {
-            $('#winner-message').text(`${currentPlayer} wins!`);
+            winner = currentPlayer;
+        }
+
+        // Check for tie condition
+        if (!winner && board.flat().every((square) => square !== '_')) {
+            winner = 'tie';
+        }
+
+        // Display winner message if there is a winner
+        if (winner) {
+            if (winner === 'tie') {
+                $('#winner-message').text(`It's a tie!`);
+            } else {
+                $('#winner-message').text(`${winner} wins!`);
+            }
             gameEnd = true;
         }
     }
+
 
     //Adding a 'click' event listener to each element with the class 'square'
 

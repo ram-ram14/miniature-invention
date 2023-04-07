@@ -8,13 +8,13 @@
 h1 {
     text-align: center;
     color: paleturquoise;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Rubik Pixels', cursive;;
 }
 
 /* Changing the color and font and adding a text-shadow.  */
 h2 {
     color: bisque;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Rubik Pixels', cursive;
     text-shadow: 5px 5px 5px chocolate;
 }
 
@@ -56,7 +56,7 @@ ul {
     border-radius: 5px;
     box-shadow: 5px 5px 5px tomato;
     margin: 30px auto 0;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Rubik Pixels', cursive;
     padding: 1.5em 2em;
 }
 

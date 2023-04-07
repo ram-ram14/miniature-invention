@@ -32,6 +32,8 @@ One thing that makes my project stand out would be the use of different markers 
 
 Additionally, the 3x3 grid is slightly different: I added a border around it because I thought it would look nicer as a cube. 
 
+### Approach Taken
+
 ### Difficulties encountered when building this
 
 Initially, I mistakenly didn't realise that the 3x3 grid would have 9 squares. I only anticipated needing 6 and I had trouble understanding how to make the grid work. 
