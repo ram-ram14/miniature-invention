@@ -80,12 +80,3 @@ ul {
 .glow {
     box-shadow: 0 0 10px blueviolet;
 }
-
-/* Adding style the game-container */
-
-#game-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
