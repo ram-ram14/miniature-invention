@@ -1,5 +1,4 @@
 /* Setting the box-sizing property to all elements */
-
 * {
     box-sizing: border-box;
 }
@@ -8,7 +7,7 @@
 h1 {
     text-align: center;
     color: paleturquoise;
-    font-family: 'Rubik Pixels', cursive;;
+    font-family: 'Rubik Pixels', cursive;
 }
 
 /* Changing the color and font and adding a text-shadow.  */
@@ -73,11 +72,20 @@ ul {
 
 /* Styling the message that gets displayed when a player wins */
 #winner-message {
-    font-size: 30px;
+    font-size: 60px;
     color: whitesmoke;
 }
 
 /* Adding a glow effect to the gameboard  */
 .glow {
     box-shadow: 0 0 10px blueviolet;
+}
+
+/* Adding style the game-container */
+
+#game-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }

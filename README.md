@@ -56,5 +56,7 @@ Player 1 is defaulted to 😼 and player 2 to 🐶.
 Each player, by turn, selects a square from the grid. 
 The aim is to get 3 in a row either diagonally, horizontally or vertically. 
 
+The result can be viewed on the bottom left (need to scroll down a little to view)
+
 ### Credits & Acknowledgements 
 A special thanks to CJ, Mark and Tina for helping me flesh this out and iron out any bugs that I came across whilst building this. 
